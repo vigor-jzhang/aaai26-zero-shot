@@ -1,0 +1,48 @@
+experiment:
+    task_name: "unc"
+    net_name: "t1"
+    # where you store weights and logs
+    work_dir: "./experiments"
+    # setup
+    max_epochs: 10_000
+    ckpt_intervals: 10
+    load_pretrain: False
+    pretrain_path: "/path/to/ckpt"
+    restoring: False
+    restore_path: "/path/to/ckpt"
+
+vqgan:
+    image_size: 256
+    image_channel: 1
+    hidden_channel: 128
+
+optimizer:
+    vqgan_learning_rate: 1e-4
+    discriminator_learning_rate: 1e-4
+    beta1: 0.9
+    beta2: 0.999
+    weight_decay: 1e-4
+
+lr_scheduler:
+    warmup_epochs: 500
+    factor: 0.8
+    patience: 10
+    cooldown: 10
+    min_lr: 1e-6
+
+dataloader:
+    data_root_dir: "./dataset/unc/"
+    train_domain: "A"
+    test_domain: "B"
+    batch_size: 9
+    batch_num: 16
+    num_workers: 8
+
+training:
+    device: "cuda:0"
+    seed: 42
+
+losses:
+    disc_start: 1_000
+    perceptual_factor: 1.0
+    recon_factor: 1.0
