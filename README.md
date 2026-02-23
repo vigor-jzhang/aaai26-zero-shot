@@ -1,6 +1,6 @@
-# AAAI 2026 - Zero-Shot Medical Image Translation via Structural Guidance
+# MICCAI 2026 - Zero-Shot Medical Image Translation via Structural Guidance
 
-Python/PyTorch codes for our paper (paper id: 21185) submitted to AAAI 2026.
+Python/PyTorch codes for our paper (paper id: 1061) submitted to MICCAI 2026.
 
 ## 1. Python environment
 
