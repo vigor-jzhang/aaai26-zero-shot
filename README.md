@@ -1,6 +1,6 @@
-# MICCAI 2026 - Zero-Shot Medical Image Translation via Structural Guidance
+# Zero-Shot Medical Image Translation via Structure Augmented Discrete Generative Modeling
 
-Python/PyTorch codes for our paper (paper id: 1061) submitted to MICCAI 2026.
+Python/PyTorch codes for paper "Zero-Shot Medical Image Translation via Structure Augmented Discrete Generative Modeling".
 
 ## 1. Python environment
 
